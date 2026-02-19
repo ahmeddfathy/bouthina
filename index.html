@@ -5,29 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="بثينة - كاتبة محتوى محترفة | كتابة محتوى إبداعي، مقالات SEO، وصف منتجات، ومحتوى مواقع إلكترونية">
-    <meta name="keywords" content="كاتبة محتوى, كتابة مقالات, SEO, محتوى إبداعي, وصف منتجات">
-    <title>بثينة | كاتبة محتوى محترفة</title>
+        content="بثينة معوض عرابي - مؤلفة قصص للأطفال واليافعين وكاتبة محتوى محترفة | أعمال منشورة عبر دور نشر عربية رائدة">
+    <meta name="keywords" content="بثينة عرابي, مؤلفة قصص أطفال, كاتبة محتوى, قصص يافعين, تأليف قصص">
+    <title>بثينة عرابي | مؤلفة قصص وكاتبة محتوى</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+
+    <!-- ===== TOP BANNER ===== -->
+    <div class="top-banner" id="topBanner">
+        <div class="container top-banner-content">
+            <p><i class="fas fa-gift"></i> احصل على <strong>استشارة مجانية</strong> في كتابة المحتوى وتأليف القصص — <a
+                    href="#contact">تواصل معي الآن</a></p>
+            <button class="top-banner-close" id="closeBanner" aria-label="إغلاق"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
 
     <!-- ===== NAVBAR ===== -->
     <nav class="navbar" id="navbar">
         <div class="container navbar-content">
             <a href="#" class="logo">
-                <span class="logo-icon"><i class="fas fa-feather-alt"></i></span>
+                <span class="logo-icon">بـ</span>
                 <span class="logo-text">بثينة</span>
             </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home" class="active">الرئيسية</a></li>
+                <li><a href="about.html">من أنا</a></li>
                 <li><a href="#services">خدماتي</a></li>
                 <li><a href="#how-it-works">كيف أعمل</a></li>
                 <li><a href="#portfolio">أعمالي</a></li>
@@ -55,15 +65,15 @@
         <div class="container hero-content">
             <div class="hero-text">
                 <span class="hero-badge">
-                    <i class="fas fa-star"></i> الانطباعات الأولى تدوم
+                    <i class="fas fa-star"></i> مؤلفة قصص وكاتبة محتوى
                 </span>
                 <h1 class="hero-title">
-                    أقدم لك <span class="highlight">محتوى إبداعي</span>
-                    <br>يرتقي بأعمالك
+                    أنا بثينة عرابي، أبتكر <span class="highlight">قصصًا ملهمة</span>
+                    <br>وأكتب محتوى احترافي
                 </h1>
                 <p class="hero-description">
-                    متخصصة في كتابة المحتوى الإبداعي والتسويقي الذي يجذب جمهورك المستهدف ويحقق أهدافك. من مقالات SEO إلى
-                    محتوى المواقع الإلكترونية ووصف المنتجات.
+                    مؤلفة مبدعة لقصص الأطفال واليافعين وكاتبة محتوى محترفة. أعمالي منشورة عبر دور نشر عربية رائدة مثل
+                    دار أصالة ودار رواية ودار المستقبل ومنصات تعليمية متميزة.
                 </p>
                 <div class="hero-buttons">
                     <a href="#portfolio" class="btn btn-primary btn-lg">
@@ -90,17 +100,17 @@
                     <img src="https://cdni.iconscout.com/illustration/premium/thumb/female-content-writer-5691576-4759508.png"
                         alt="بثينة - كاتبة محتوى">
                     <div class="hero-floating-card card-1">
-                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-book"></i>
                         <div>
-                            <strong>+500</strong>
-                            <span>مقال منشور</span>
+                            <strong>+20</strong>
+                            <span>قصة منشورة</span>
                         </div>
                     </div>
                     <div class="hero-floating-card card-2">
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-building"></i>
                         <div>
-                            <strong>4.9/5</strong>
-                            <span>تقييم العملاء</span>
+                            <strong>+8</strong>
+                            <span>دار نشر ومنصة</span>
                         </div>
                     </div>
                 </div>
@@ -119,40 +129,47 @@
             <div class="section-header">
                 <span class="section-badge">خدماتي</span>
                 <h2 class="section-title">الخدمات التي أقدمها</h2>
-                <p class="section-subtitle">أقدم مجموعة متنوعة من خدمات كتابة المحتوى المصممة لتلبية احتياجات عملك</p>
+                <p class="section-subtitle">أقدم خدمات متنوعة في التأليف وكتابة المحتوى الإبداعي</p>
             </div>
             <div class="services-grid">
-                <div class="service-card" data-aos="fade-up">
+                <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-globe"></i>
+                        <i class="fas fa-child"></i>
                     </div>
-                    <h3>محتوى المواقع</h3>
-                    <p>كتابة محتوى احترافي لصفحات موقعك الإلكتروني يعكس هوية علامتك التجارية ويجذب الزوار.</p>
-                    <a href="#" class="service-link">اعرف المزيد <i class="fas fa-arrow-left"></i></a>
+                    <h3>تأليف قصص الأطفال</h3>
+                    <p>كتابة قصص مشوقة وتعليمية وثرية ثقافيًا للأطفال بمختلف الفئات العمرية، من Early Readers حتى
+                        اليافعين.</p>
+                    <a href="about.html#experience" class="service-link">اعرف المزيد <i
+                            class="fas fa-arrow-left"></i></a>
                 </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card">
                     <div class="service-icon icon-orange">
-                        <i class="fas fa-search"></i>
+                        <i class="fas fa-pen-nib"></i>
                     </div>
-                    <h3>مقالات SEO</h3>
-                    <p>كتابة مقالات متوافقة مع محركات البحث تساعد موقعك في تصدر نتائج البحث وجذب المزيد من الزوار.</p>
-                    <a href="#" class="service-link">اعرف المزيد <i class="fas fa-arrow-left"></i></a>
+                    <h3>كتابة الروايات</h3>
+                    <p>تأليف روايات للفتيات واليافعين تتناول قضاياهم وتتحدث بلسانهم، منشورة عبر دور نشر عربية رائدة.</p>
+                    <a href="about.html#experience" class="service-link">اعرف المزيد <i
+                            class="fas fa-arrow-left"></i></a>
                 </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card">
                     <div class="service-icon icon-green">
-                        <i class="fas fa-box-open"></i>
-                    </div>
-                    <h3>وصف المنتجات</h3>
-                    <p>كتابة أوصاف منتجات جذابة ومقنعة تحفز العملاء على الشراء وتزيد من معدل التحويل.</p>
-                    <a href="#" class="service-link">اعرف المزيد <i class="fas fa-arrow-left"></i></a>
-                </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-icon icon-purple">
-                        <i class="fas fa-pen-fancy"></i>
+                        <i class="fas fa-newspaper"></i>
                     </div>
                     <h3>كتابة المقالات</h3>
-                    <p>كتابة مقالات إبداعية ومتميزة في مختلف المجالات تثري محتوى مدونتك وتعزز مكانتك.</p>
-                    <a href="#" class="service-link">اعرف المزيد <i class="fas fa-arrow-left"></i></a>
+                    <p>كتابة مقالات احترافية ومتوافقة مع SEO في مختلف المجالات، منشورة على منصات مثل خمسات وساسة بوست.
+                    </p>
+                    <a href="about.html#experience" class="service-link">اعرف المزيد <i
+                            class="fas fa-arrow-left"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon icon-purple">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3>كتابة السيناريوهات التعليمية</h3>
+                    <p>كتابة سيناريوهات تعليمية للأطفال والكبار يتم إخراجها في فيديوهات أنيميشن تُبث على منصات تعليمية.
+                    </p>
+                    <a href="about.html#achievements" class="service-link">اعرف المزيد <i
+                            class="fas fa-arrow-left"></i></a>
                 </div>
             </div>
             <div class="services-cta">
@@ -206,7 +223,7 @@
                 </div>
                 <div class="how-image">
                     <div class="how-img-wrapper">
-                        <img src="podcast-color-concept-with-people-scene-flat-cartoon-style-man-is-recording-podcast_198565-3123.jpg"
+                        <img src="assets/images/podcast-color-concept-with-people-scene-flat-cartoon-style-man-is-recording-podcast_198565-3123.jpg"
                             alt="كتابة المحتوى">
                     </div>
                 </div>
@@ -219,9 +236,10 @@
         <div class="container">
             <h3 class="companies-title">عملاء يثقون فينا</h3>
             <div class="companies-logos">
-                <div class="company-logo"><img src="434035910_122157981944059463_6412964546012727547_n.jpg" alt="عميل">
+                <div class="company-logo"><img
+                        src="assets/images/434035910_122157981944059463_6412964546012727547_n.jpg" alt="عميل">
                 </div>
-                <div class="company-logo"><img src="OIP.webp" alt="عميل"></div>
+                <div class="company-logo"><img src="assets/images/OIP.webp" alt="عميل"></div>
             </div>
         </div>
     </section>
@@ -233,54 +251,56 @@
                 <div class="about-text">
                     <div class="section-header text-right">
                         <span class="section-badge">عن بثينة</span>
-                        <h2 class="section-title">الاحترافية هي أولويتي</h2>
+                        <h2 class="section-title">بثينة معوض عرابي</h2>
                     </div>
                     <p class="about-description">
-                        أنا بثينة، كاتبة محتوى محترفة بخبرة تزيد عن 5 سنوات في صناعة المحتوى الرقمي. أؤمن بأن الكلمات
-                        لها قوة تغيير المعادلات في عالم الأعمال، ولذلك أحرص على تقديم محتوى يجمع بين الإبداع
-                        والاحترافية.
+                        مؤلفة مبدعة وبارعة لقصص الأطفال واليافعين، تتمتع بخبرة واسعة في ابتكار قصص مشوقة، تعليمية، وثرية
+                        ثقافيًا. تمتد أعمالها المنشورة عبر دور نشر عربية رائدة ومنصات تعليمية متميزة مثل دار أصالة، دار
+                        رواية، دار المستقبل، ومنصة عصافير.
                     </p>
                     <div class="about-process">
                         <div class="process-item">
-                            <div class="process-num">1</div>
+                            <div class="process-num"><i class="fas fa-book"></i></div>
                             <div>
-                                <h4>أرسل طلبك</h4>
-                                <p>حدد متطلباتك وأخبرني عن مشروعك بالتفصيل لأفهم احتياجاتك.</p>
+                                <h4>تأليف قصص الأطفال واليافعين</h4>
+                                <p>أكثر من 20 قصة منشورة عبر دور نشر عربية رائدة ومنصات تعليمية.</p>
                             </div>
                         </div>
                         <div class="process-item">
-                            <div class="process-num">2</div>
+                            <div class="process-num"><i class="fas fa-pen-nib"></i></div>
                             <div>
-                                <h4>تابع التقدم</h4>
-                                <p>تابع مراحل العمل خطوة بخطوة مع إمكانية تقديم ملاحظاتك.</p>
+                                <h4>كتابة المقالات والمحتوى</h4>
+                                <p>مقالات منشورة على منصات مثل خمسات وساسة بوست ومجلة قناديل.</p>
                             </div>
                         </div>
                         <div class="process-item">
-                            <div class="process-num">3</div>
+                            <div class="process-num"><i class="fas fa-film"></i></div>
                             <div>
-                                <h4>المراجعة النهائية</h4>
-                                <p>استلم المحتوى بعد المراجعة النهائية جاهزاً للنشر بأعلى جودة.</p>
+                                <h4>سيناريوهات تعليمية</h4>
+                                <p>مشروع كتابة 1000 سيناريو تعليمي للأطفال مع منصة مدرستي.</p>
                             </div>
                         </div>
                     </div>
+                    <a href="about.html" class="btn btn-primary" style="margin-top: 20px;"><i class="fas fa-user"></i>
+                        اعرف المزيد عني</a>
                 </div>
                 <div class="about-image">
                     <div class="about-img-wrapper">
                         <div class="about-blob"></div>
-                        <img src="33906356_indomay75.jpg" alt="بثينة">
+                        <img src="assets/images/33906356_indomay75.jpg" alt="بثينة عرابي">
                     </div>
                     <div class="about-stats">
                         <div class="about-stat">
-                            <strong>455+</strong>
-                            <span>عميل تعاونت معه</span>
+                            <strong>+20</strong>
+                            <span>قصة منشورة</span>
                         </div>
                         <div class="about-stat">
-                            <strong>5245+</strong>
-                            <span>مقال منشور</span>
+                            <strong>+8</strong>
+                            <span>دار نشر ومنصة</span>
                         </div>
                         <div class="about-stat">
-                            <strong>250+</strong>
-                            <span>عميل سعيد</span>
+                            <strong>+1000</strong>
+                            <span>سيناريو تعليمي</span>
                         </div>
                     </div>
                 </div>
@@ -292,70 +312,74 @@
     <section class="portfolio" id="portfolio">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">سابقة الأعمال</span>
-                <h2 class="section-title">آخر أعمالي</h2>
-                <p class="section-subtitle">نماذج من أحدث المشاريع التي عملت عليها</p>
+                <span class="section-badge">أعمالي المنشورة</span>
+                <h2 class="section-title">نماذج من أعمالي</h2>
+                <p class="section-subtitle">قصص منشورة، روايات، ومقالات عبر دور نشر ومنصات عربية رائدة</p>
             </div>
             <div class="portfolio-grid">
                 <div class="portfolio-card">
                     <div class="portfolio-img">
-                        <img src="https://images.unsplash.com/photo-1542435503-956c469947f6?w=400&h=300&fit=crop"
-                            alt="محتوى تسويقي">
+                        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400&h=300&fit=crop"
+                            alt="قصة غرير العسل القوي">
                         <div class="portfolio-overlay">
-                            <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://3asafeer.com/index.php?page=read&task=story&id=485" target="_blank"
+                                class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                     <div class="portfolio-info">
-                        <span class="portfolio-category">محتوى تسويقي</span>
-                        <h4>حملة تسويقية لشركة تقنية</h4>
-                        <p>كتابة محتوى تسويقي شامل لحملة إطلاق منتج تقني جديد.</p>
+                        <span class="portfolio-category">قصص أطفال — عصافير</span>
+                        <h4>قصة غرير العسل القوي</h4>
+                        <p>قصة مشوقة للأطفال منشورة على منصة عصافير ضمن مشروع مائة قصة وقصة — 2019</p>
                     </div>
                 </div>
                 <div class="portfolio-card">
                     <div class="portfolio-img">
-                        <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=400&h=300&fit=crop"
-                            alt="مقالات SEO">
+                        <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400&h=300&fit=crop"
+                            alt="قصة منزل الطائر شهريار">
                         <div class="portfolio-overlay">
-                            <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://3asafeer.com/index.php?page=read&task=story&id=513" target="_blank"
+                                class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                     <div class="portfolio-info">
-                        <span class="portfolio-category">مقالات SEO</span>
-                        <h4>سلسلة مقالات لمدونة صحية</h4>
-                        <p>كتابة 30+ مقال متوافق مع SEO لمدونة متخصصة في الصحة.</p>
+                        <span class="portfolio-category">قصص أطفال — عصافير</span>
+                        <h4>قصة منزل الطائر شهريار</h4>
+                        <p>قصة تعليمية للأطفال منشورة على منصة عصافير — 2019</p>
                     </div>
                 </div>
                 <div class="portfolio-card">
                     <div class="portfolio-img">
-                        <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?w=400&h=300&fit=crop"
-                            alt="وصف منتجات">
+                        <img src="https://images.unsplash.com/photo-1524578271613-d550eacf6090?w=400&h=300&fit=crop"
+                            alt="رواية الفريدة">
                         <div class="portfolio-overlay">
-                            <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="about.html#experience" class="portfolio-link"><i
+                                    class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                     <div class="portfolio-info">
-                        <span class="portfolio-category">وصف منتجات</span>
-                        <h4>متجر إلكتروني للأزياء</h4>
-                        <p>كتابة أوصاف 200+ منتج لمتجر إلكتروني متخصص في الأزياء.</p>
+                        <span class="portfolio-category">رواية — مؤسسة أنس البناء التربوية</span>
+                        <h4>رواية الفريدة</h4>
+                        <p>رواية لفئة المراهقات، نُشرت عام 2019 ضمن مشروع كتابة ثلاث روايات للفتيات.</p>
                     </div>
                 </div>
                 <div class="portfolio-card">
                     <div class="portfolio-img">
-                        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=400&h=300&fit=crop"
-                            alt="محتوى مواقع">
+                        <img src="https://images.unsplash.com/photo-1485546246426-74dc88dec4d9?w=400&h=300&fit=crop"
+                            alt="سيناريوهات تعليمية">
                         <div class="portfolio-overlay">
-                            <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://youtu.be/vpbgrrevuMY" target="_blank" class="portfolio-link"><i
+                                    class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                     <div class="portfolio-info">
-                        <span class="portfolio-category">محتوى مواقع</span>
-                        <h4>موقع شركة استشارات</h4>
-                        <p>كتابة محتوى كامل لموقع شركة استشارات أعمال متعددة الصفحات.</p>
+                        <span class="portfolio-category">سيناريوهات تعليمية — منصة مدرستي</span>
+                        <h4>فيديوهات أنيميشن تعليمية</h4>
+                        <p>سيناريوهات تعليمية للأطفال والكبار تم إخراجها كفيديوهات أنيميشن تُبث على منصة مدرستي.</p>
                     </div>
                 </div>
             </div>
             <div class="portfolio-cta">
-                <a href="#" class="btn btn-primary">
+                <a href="about.html#experience" class="btn btn-primary">
                     <i class="fas fa-th"></i> عرض جميع الأعمال
                 </a>
             </div>
@@ -366,68 +390,73 @@
     <section class="blog" id="blog">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">المدونة</span>
-                <h2 class="section-title">آخر مقالات المدونة</h2>
-                <p class="section-subtitle">أحدث المقالات والنصائح في عالم كتابة المحتوى</p>
+                <span class="section-badge">مقالاتي</span>
+                <h2 class="section-title">مقالات منشورة</h2>
+                <p class="section-subtitle">مقالات احترافية منشورة على منصات عربية رائدة</p>
             </div>
             <div class="blog-grid">
                 <div class="blog-card">
                     <div class="blog-img">
-                        <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=250&fit=crop"
-                            alt="مقال">
+                        <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=400&h=250&fit=crop"
+                            alt="كيف تكتسب مهارة القراءة">
                         <span class="blog-date">
-                            <i class="far fa-calendar-alt"></i> 15 فبراير 2026
+                            <i class="far fa-calendar-alt"></i> خمسات
                         </span>
                     </div>
                     <div class="blog-content">
                         <div class="blog-tags">
-                            <span class="blog-tag">SEO</span>
-                            <span class="blog-tag">كتابة</span>
+                            <span class="blog-tag">تطوير ذاتي</span>
+                            <span class="blog-tag">مهارات</span>
                         </div>
-                        <h4><a href="#">10 نصائح لكتابة مقالات SEO احترافية</a></h4>
-                        <p>تعرف على أهم النصائح والاستراتيجيات لكتابة مقالات متوافقة مع محركات البحث...</p>
-                        <a href="#" class="blog-read-more">
-                            اقرأ المزيد <i class="fas fa-arrow-left"></i>
+                        <h4><a href="https://blog.khamsat.com/reading-skills/" target="_blank">كيف تكتسب مهارة
+                                القراءة</a></h4>
+                        <p>مقال شامل عن كيفية اكتساب مهارة القراءة وتطويرها بشكل فعّال لتحسين حياتك المهنية والشخصية...
+                        </p>
+                        <a href="https://blog.khamsat.com/reading-skills/" target="_blank" class="blog-read-more">
+                            اقرأ المقال <i class="fas fa-arrow-left"></i>
                         </a>
                     </div>
                 </div>
                 <div class="blog-card">
                     <div class="blog-img">
-                        <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=400&h=250&fit=crop"
-                            alt="مقال">
+                        <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=400&h=250&fit=crop"
+                            alt="أهمية العمل الجماعي">
                         <span class="blog-date">
-                            <i class="far fa-calendar-alt"></i> 10 فبراير 2026
+                            <i class="far fa-calendar-alt"></i> خمسات
                         </span>
                     </div>
                     <div class="blog-content">
                         <div class="blog-tags">
-                            <span class="blog-tag">تسويق</span>
-                            <span class="blog-tag">محتوى</span>
+                            <span class="blog-tag">بيئة العمل</span>
+                            <span class="blog-tag">إدارة</span>
                         </div>
-                        <h4><a href="#">كيف تبني استراتيجية محتوى ناجحة لعلامتك التجارية</a></h4>
-                        <p>دليلك الشامل لبناء استراتيجية محتوى فعالة تزيد من وعي العملاء بعلامتك...</p>
-                        <a href="#" class="blog-read-more">
-                            اقرأ المزيد <i class="fas fa-arrow-left"></i>
+                        <h4><a href="https://blog.khamsat.com/teamwork-importance/" target="_blank">ما أهمية العمل
+                                الجماعي في بيئة العمل</a></h4>
+                        <p>مقال يستعرض أهمية العمل الجماعي وتأثيره الإيجابي على الإنتاجية وبيئة العمل...</p>
+                        <a href="https://blog.khamsat.com/teamwork-importance/" target="_blank" class="blog-read-more">
+                            اقرأ المقال <i class="fas fa-arrow-left"></i>
                         </a>
                     </div>
                 </div>
                 <div class="blog-card">
                     <div class="blog-img">
-                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=250&fit=crop"
-                            alt="مقال">
+                        <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=400&h=250&fit=crop"
+                            alt="كتابة السيرة الذاتية">
                         <span class="blog-date">
-                            <i class="far fa-calendar-alt"></i> 5 فبراير 2026
+                            <i class="far fa-calendar-alt"></i> خمسات
                         </span>
                     </div>
                     <div class="blog-content">
                         <div class="blog-tags">
-                            <span class="blog-tag">إبداع</span>
-                            <span class="blog-tag">كتابة</span>
+                            <span class="blog-tag">سيرة ذاتية</span>
+                            <span class="blog-tag">احترافية</span>
                         </div>
-                        <h4><a href="#">أسرار الكتابة الإبداعية: من الفكرة إلى النشر</a></h4>
-                        <p>اكتشف أسرار الكتابة الإبداعية وكيف تحول أفكارك إلى محتوى يجذب القراء...</p>
-                        <a href="#" class="blog-read-more">
-                            اقرأ المزيد <i class="fas fa-arrow-left"></i>
+                        <h4><a href="https://blog.khamsat.com/professional-cv-writing/" target="_blank">كيفية كتابة
+                                السيرة الذاتية بشكل احترافي</a></h4>
+                        <p>دليل شامل لكتابة سيرة ذاتية احترافية تميزك عن غيرك، بالتعاون مع فريق خمسات...</p>
+                        <a href="https://blog.khamsat.com/professional-cv-writing/" target="_blank"
+                            class="blog-read-more">
+                            اقرأ المقال <i class="fas fa-arrow-left"></i>
                         </a>
                     </div>
                 </div>
@@ -442,8 +471,9 @@
         </div>
         <div class="container">
             <div class="cta-content">
-                <h2>احصل على استشارة مجانية!</h2>
-                <p>هل تبحث عن محتوى احترافي يرتقي بأعمالك؟ تواصل معي الآن واحصل على استشارة مجانية لمشروعك.</p>
+                <h2>تواصل معي الآن!</h2>
+                <p>هل تبحث عن مؤلفة قصص أطفال أو كاتبة محتوى محترفة؟ تواصل معي على buthainaorabi123@gmail.com أو اتصل
+                    على +20 10 29416176</p>
                 <form class="cta-form" id="ctaForm">
                     <div class="cta-form-row">
                         <input type="text" placeholder="الاسم الكامل" required>
@@ -521,16 +551,18 @@
             <div class="footer-grid">
                 <div class="footer-about">
                     <a href="#" class="logo footer-logo">
-                        <span class="logo-icon"><i class="fas fa-feather-alt"></i></span>
+                        <span class="logo-icon">بـ</span>
                         <span class="logo-text">بثينة</span>
                     </a>
-                    <p>كاتبة محتوى محترفة متخصصة في صناعة المحتوى الإبداعي والتسويقي. أساعدك في بناء حضور رقمي قوي من
-                        خلال كلمات مؤثرة.</p>
+                    <p>بثينة معوض عرابي — مؤلفة قصص للأطفال واليافعين وكاتبة محتوى محترفة. أبتكر قصصًا مشوقة وتعليمية
+                        وثرية ثقافيًا.</p>
                     <div class="footer-socials">
-                        <a href="#" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="انستغرام"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="لينكدإن"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/buthaina-orabi-15515a1b0" target="_blank"
+                            aria-label="لينكدإن"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://blog.khamsat.com/author/buthaina-orabi/" target="_blank" aria-label="خمسات"><i
+                                class="fas fa-pen"></i></a>
+                        <a href="mailto:buthainaorabi123@gmail.com" aria-label="ايميل"><i
+                                class="fas fa-envelope"></i></a>
                     </div>
                 </div>
                 <div class="footer-links">
@@ -543,12 +575,11 @@
                     </ul>
                 </div>
                 <div class="footer-links">
-                    <h4>الخدمات</h4>
+                    <h4>معلومات الاتصال</h4>
                     <ul>
-                        <li><a href="#">محتوى المواقع</a></li>
-                        <li><a href="#">مقالات SEO</a></li>
-                        <li><a href="#">وصف المنتجات</a></li>
-                        <li><a href="#">كتابة المقالات</a></li>
+                        <li><i class="fas fa-envelope"></i> buthainaorabi123@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +20 10 29416176</li>
+                        <li><i class="fas fa-map-marker-alt"></i> بني سويف، مصر</li>
                     </ul>
                 </div>
                 <div class="footer-newsletter">
@@ -571,7 +602,7 @@
         <i class="fas fa-chevron-up"></i>
     </button>
 
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

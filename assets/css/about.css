@@ -1,0 +1,702 @@
+/* ===== PAGE HERO ===== */
+.page-hero {
+    padding: 200px 0 80px;
+    background: var(--primary);
+    position: relative;
+    overflow: hidden;
+}
+
+.page-hero::before {
+    content: '';
+    position: absolute;
+    top: -150px;
+    right: -100px;
+    width: 500px;
+    height: 500px;
+    background: var(--accent);
+    border-radius: 50%;
+    opacity: 0.08;
+}
+
+.page-hero::after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    left: -80px;
+    width: 350px;
+    height: 350px;
+    background: var(--secondary);
+    border-radius: 50%;
+    opacity: 0.08;
+}
+
+.page-hero-content {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.page-hero-title {
+    font-family: 'Cairo', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--text-white);
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.page-hero-subtitle {
+    font-size: 1.2rem;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.page-hero-description {
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.8;
+    margin-bottom: 25px;
+    max-width: 600px;
+}
+
+.page-hero-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.contact-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50px;
+    color: var(--text-white);
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.contact-chip i {
+    color: var(--accent);
+}
+
+/* Fix LTR content in RTL layout */
+.contact-chip[dir="ltr"],
+.btn[dir="ltr"] {
+    flex-direction: row-reverse;
+}
+
+.footer-links li[dir="ltr"] {
+    text-align: right;
+    direction: ltr;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+}
+
+.page-hero-image img {
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+    border-radius: var(--radius-lg);
+}
+
+/* ===== ABOUT SECTIONS ===== */
+.about-section {
+    padding: 80px 0;
+    background: var(--bg-white);
+}
+
+.about-section-alt {
+    background: var(--primary);
+    color: var(--text-white);
+}
+
+.about-section-alt .section-title {
+    color: var(--text-white);
+}
+
+.about-section-alt .section-subtitle {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.about-section-alt .section-badge {
+    background: rgba(232, 133, 59, 0.2);
+    color: var(--accent);
+}
+
+/* Dark section cards */
+.about-section-alt .achievement-card,
+.about-section-alt .course-card {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.about-section-alt .achievement-card h3,
+.about-section-alt .course-card h4,
+.about-section-alt .course-body h4 {
+    color: var(--text-white);
+}
+
+.about-section-alt .achievement-card p,
+.about-section-alt .course-card span,
+.about-section-alt .course-body span {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.about-section-alt .achievement-icon {
+    background: rgba(232, 133, 59, 0.15);
+}
+
+.about-section-alt .achievement-date {
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.about-section-alt .achievement-links a {
+    border-color: rgba(232, 133, 59, 0.3);
+    color: var(--accent);
+}
+
+.about-section-alt .course-icon {
+    background: rgba(232, 133, 59, 0.15);
+}
+
+/* ===== TIMELINE ===== */
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-right: 40px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, var(--accent), var(--secondary));
+    border-radius: 3px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-right: 30px;
+}
+
+.timeline-dot {
+    position: absolute;
+    right: -48px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    background: var(--accent);
+    border-radius: 50%;
+    border: 3px solid var(--bg-white);
+    box-shadow: 0 0 0 3px var(--accent);
+}
+
+.timeline-content {
+    background: var(--bg-white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 25px 30px;
+    box-shadow: var(--shadow-sm);
+}
+
+.timeline-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.timeline-header h3 {
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 0;
+}
+
+.timeline-location,
+.timeline-date {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.timeline-location i,
+.timeline-date i {
+    color: var(--accent);
+    font-size: 0.8rem;
+}
+
+.timeline-role {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+
+.timeline-desc {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.timeline-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-list li {
+    position: relative;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    font-size: 0.95rem;
+    color: var(--text-body);
+    line-height: 1.7;
+}
+
+.timeline-list li::before {
+    content: '✦';
+    position: absolute;
+    right: 0;
+    color: var(--accent);
+    font-size: 0.7rem;
+    top: 4px;
+}
+
+.timeline-list li a {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+/* ===== ACHIEVEMENTS ===== */
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.achievement-card {
+    background: var(--bg-white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 30px;
+    box-shadow: var(--shadow-sm);
+}
+
+.achievement-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(232, 133, 59, 0.1);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--accent);
+    margin-bottom: 15px;
+}
+
+.achievement-card h3 {
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.achievement-org {
+    font-size: 0.9rem;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.achievement-date {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    background: rgba(27, 42, 74, 0.05);
+    padding: 3px 12px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+
+.achievement-card p {
+    font-size: 0.93rem;
+    color: var(--text-body);
+    line-height: 1.7;
+}
+
+.achievement-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.achievement-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    color: var(--accent);
+    padding: 6px 14px;
+    border: 1px solid rgba(232, 133, 59, 0.25);
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/* ===== EDUCATION ===== */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.education-card {
+    background: linear-gradient(145deg, #ffffff 0%, #f8f9ff 50%, #fff9f2 100%);
+    border-radius: var(--radius-lg);
+    padding: 40px 30px 35px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(27, 42, 74, 0.06);
+}
+
+.education-degree {
+    display: inline-block;
+    background: var(--accent-gradient);
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 8px 24px;
+    border-radius: 30px;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 15px rgba(232, 133, 59, 0.25);
+    letter-spacing: 0.5px;
+}
+
+.education-card h3 {
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 12px;
+}
+
+.education-uni {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.education-uni i {
+    color: var(--accent);
+    font-size: 1rem;
+}
+
+.education-card p:last-child {
+    font-size: 0.9rem;
+    color: var(--text-body);
+    line-height: 1.8;
+}
+
+.education-card p:last-child strong {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+/* ===== COURSES ===== */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.course-card {
+    background: var(--bg-white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 25px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Featured course cards with images */
+.course-card-featured {
+    flex-direction: column;
+    padding: 0;
+    overflow: hidden;
+    gap: 0;
+}
+
+.course-card-featured .course-img {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.course-card-featured .course-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.course-card-featured:hover .course-img img {
+    transform: scale(1.05);
+}
+
+.course-card-featured .course-body {
+    padding: 20px;
+}
+
+.course-icon {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    background: rgba(232, 133, 59, 0.1);
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: var(--accent);
+}
+
+.course-body h4,
+.course-card h4 {
+    font-family: 'Cairo', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 4px;
+}
+
+.course-body span,
+.course-card span {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* ===== SKILLS & LANGUAGES ===== */
+.skills-languages-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: rgba(27, 42, 74, 0.04);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.skill-tag i {
+    color: var(--accent);
+}
+
+.languages-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.language-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.language-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.language-name {
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 1rem;
+}
+
+.language-level {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.language-bar {
+    width: 100%;
+    height: 8px;
+    background: rgba(27, 42, 74, 0.08);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.language-fill {
+    height: 100%;
+    background: var(--accent-gradient);
+    border-radius: 10px;
+}
+
+/* ===== CTA CONTACT INFO ===== */
+.cta-contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+    .page-hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .page-hero-image {
+        display: flex;
+        justify-content: center;
+        order: -1;
+    }
+
+    .page-hero-image img {
+        width: 220px;
+    }
+
+    .page-hero-contact {
+        justify-content: center;
+    }
+
+    .page-hero-description {
+        margin: 0 auto 25px;
+    }
+
+    .skills-languages-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .timeline {
+        padding-right: 30px;
+    }
+
+    .timeline-dot {
+        right: -38px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-hero {
+        padding: 130px 0 60px;
+    }
+
+    .page-hero-title {
+        font-size: 2.2rem;
+    }
+
+    .page-hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .about-section {
+        padding: 60px 0;
+    }
+
+    .cta-contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-hero-title {
+        font-size: 1.8rem;
+    }
+
+    .contact-chip {
+        font-size: 0.8rem;
+        padding: 8px 14px;
+    }
+
+    .timeline {
+        padding-right: 20px;
+    }
+
+    .timeline::before {
+        right: 0;
+    }
+
+    .timeline-dot {
+        right: -28px;
+        width: 12px;
+        height: 12px;
+    }
+
+    .timeline-content {
+        padding: 18px 20px;
+    }
+}
