@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="مقال بقلم بثينة عرابي - كاتبة محتوى ومؤلفة قصص">
+    <title>المقال | بثينة عرابي</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/about.css">
+    <link rel="stylesheet" href="../assets/css/blog.css">
+</head>
+
+<body>
+
+    <!-- ===== TOP BANNER ===== -->
+    <div class="top-banner" id="topBanner">
+        <div class="container top-banner-content">
+            <p><i class="fas fa-gift"></i> احصل على <strong>استشارة مجانية</strong> في كتابة المحتوى وتأليف القصص — <a
+                    href="../index.html#contact">تواصل معي الآن</a></p>
+            <button class="top-banner-close" id="closeBanner" aria-label="إغلاق"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container navbar-content">
+            <a href="../index.html" class="logo">
+                <img src="../assets/images/logo/logo.png" alt="بثينة عرابي" class="logo-img">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">الرئيسية</a></li>
+                <li><a href="../about.html">من أنا</a></li>
+                <li><a href="../services.html">خدماتي</a></li>
+                <li><a href="../portfolio/index.html">أعمالي</a></li>
+                <li><a href="../blog/index.html" class="active">المدونة</a></li>
+                <li><a href="../contact.html">تواصل معي</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="../contact.html" class="btn btn-primary btn-nav">تواصل معي</a>
+                <button class="hamburger" id="hamburger" aria-label="فتح القائمة">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== ARTICLE HERO ===== -->
+    <section class="article-hero" id="articleHero">
+        <div class="article-hero-bg" id="articleHeroBg">
+            <img id="articleHeroImg" src="" alt="">
+        </div>
+        <div class="container">
+            <div class="article-hero-content" data-aos="fade-up">
+                <a href="index.html" class="article-back"><i class="fas fa-arrow-right"></i> العودة للمدونة</a>
+                <div class="article-hero-tags" id="articleTags"></div>
+                <h1 id="articleTitle">جاري التحميل...</h1>
+                <div class="article-meta">
+                    <div class="article-author-info">
+                        <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=80&h=80&fit=crop&crop=face"
+                            alt="بثينة عرابي">
+                        <div>
+                            <strong>بثينة عرابي</strong>
+                            <span>كاتبة محتوى ومؤلفة قصص</span>
+                        </div>
+                    </div>
+                    <div class="article-meta-items">
+                        <span><i class="far fa-calendar-alt"></i> <span id="articleDate"></span></span>
+                        <span><i class="far fa-clock"></i> <span id="articleReadTime"></span></span>
+                        <span><i class="fas fa-tag"></i> <span id="articleCategory"></span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ARTICLE CONTENT ===== -->
+    <section class="article-section">
+        <div class="container">
+            <div class="article-layout">
+                <!-- Main Content -->
+                <div class="article-content" id="articleContent"></div>
+
+                <!-- Sidebar -->
+                <aside class="article-sidebar">
+                    <div class="sidebar-author-card">
+                        <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=80&h=80&fit=crop&crop=face"
+                            alt="بثينة عرابي">
+                        <h4>بثينة عرابي</h4>
+                        <p>كاتبة محتوى احترافية ومؤلفة قصص للأطفال واليافعين. صاحبة قلم يجمع بين الإبداع والعمق الفكري.
+                        </p>
+                        <a href="../contact.html" class="btn btn-primary">تواصل معي</a>
+                    </div>
+
+                    <div class="sidebar-related" id="articleInfoBox">
+                        <h4><i class="fas fa-info-circle"></i> معلومات المقال</h4>
+                        <div class="project-info-list">
+                            <div class="project-info-item">
+                                <span class="info-label">المنصة</span>
+                                <span class="info-value" id="sidebarPlatform"></span>
+                            </div>
+                            <div class="project-info-item">
+                                <span class="info-label">السنة</span>
+                                <span class="info-value" id="sidebarDate"></span>
+                            </div>
+                            <div class="project-info-item">
+                                <span class="info-label">التصنيف</span>
+                                <span class="info-value" id="sidebarCategory"></span>
+                            </div>
+                            <div class="project-info-item">
+                                <span class="info-label">وقت القراءة</span>
+                                <span class="info-value" id="sidebarReadTime"></span>
+                            </div>
+                        </div>
+                        <div id="externalLinkBtn"></div>
+                    </div>
+
+                    <div class="sidebar-related">
+                        <h4><i class="fas fa-newspaper"></i> مقالات أخرى</h4>
+                        <div class="sidebar-related-list" id="relatedList"></div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="../index.html" class="logo footer-logo">
+                        <img src="../assets/images/logo/logo.jpeg" alt="بثينة عرابي" class="logo-img">
+                    </a>
+                    <p>بثينة معوض عرابي — مؤلفة قصص للأطفال واليافعين وكاتبة محتوى محترفة.</p>
+                    <div class="footer-socials">
+                        <a href="https://www.linkedin.com/in/buthaina-orabi-15515a1b0" target="_blank"
+                            aria-label="لينكدإن"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://blog.khamsat.com/author/buthaina-orabi/" target="_blank" aria-label="خمسات"><i
+                                class="fas fa-pen"></i></a>
+                        <a href="mailto:buthainaorabi123@gmail.com" aria-label="ايميل"><i
+                                class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="../index.html">الرئيسية</a></li>
+                        <li><a href="../about.html">من أنا</a></li>
+                        <li><a href="../portfolio/index.html">أعمالي</a></li>
+                        <li><a href="../blog/index.html">المدونة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>معلومات الاتصال</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> buthainaorabi123@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +20 10 29416176</li>
+                        <li><i class="fas fa-map-marker-alt"></i> بني سويف، مصر</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 بثينة عرابي. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" aria-label="العودة للأعلى">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/blog-data.js"></script>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const id = parseInt(params.get('id'));
+        const article = blogArticles[id];
+
+        if (article) {
+            document.title = article.title + ' | بثينة عرابي';
+            document.querySelector('meta[name="description"]').content = article.title + ' - مقال بقلم بثينة عرابي';
+
+            document.getElementById('articleHeroImg').src = article.image;
+            document.getElementById('articleHeroImg').alt = article.title;
+            document.getElementById('articleTitle').textContent = article.title;
+            document.getElementById('articleDate').textContent = article.date;
+            document.getElementById('articleReadTime').textContent = article.readTime;
+            document.getElementById('articleCategory').textContent = article.category;
+
+            const tagsEl = document.getElementById('articleTags');
+            article.tags.forEach(tag => {
+                const span = document.createElement('span');
+                span.className = 'blog-page-tag';
+                span.textContent = tag;
+                tagsEl.appendChild(span);
+            });
+
+            const shareUrl = encodeURIComponent(window.location.href);
+            const shareTitle = encodeURIComponent(article.title);
+            document.getElementById('articleContent').innerHTML = article.content + `
+                <div class="article-share">
+                    <h4>شارك المقال</h4>
+                    <div class="article-share-links">
+                        <a href="https://twitter.com/intent/tweet?text=${shareTitle}&url=${shareUrl}" target="_blank" class="share-link share-twitter" aria-label="تويتر"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=${shareUrl}" target="_blank" class="share-link share-facebook" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/sharing/share-offsite/?url=${shareUrl}" target="_blank" class="share-link share-linkedin" aria-label="لينكدإن"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/?text=${shareTitle}%20${shareUrl}" target="_blank" class="share-link share-whatsapp" aria-label="واتساب"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('sidebarPlatform').textContent = article.platform;
+            document.getElementById('sidebarDate').textContent = article.date;
+            document.getElementById('sidebarCategory').textContent = article.category;
+            document.getElementById('sidebarReadTime').textContent = article.readTime;
+
+            if (article.externalUrl) {
+                document.getElementById('externalLinkBtn').innerHTML = `
+                    <a href="${article.externalUrl}" target="_blank" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:20px;">
+                        <i class="fas fa-external-link-alt"></i> اقرأ على ${article.platform}
+                    </a>
+                `;
+            }
+
+            const relatedList = document.getElementById('relatedList');
+            Object.values(blogArticles).filter(a => a.id !== id).slice(0, 3).forEach(rel => {
+                relatedList.innerHTML += `
+                    <a href="post.html?id=${rel.id}" class="sidebar-related-item">
+                        <img src="${rel.image.replace('w=1400&h=600', 'w=100&h=80')}" alt="${rel.title}">
+                        <div>
+                            <h5>${rel.title}</h5>
+                            <span>${rel.platform} — ${rel.date}</span>
+                        </div>
+                    </a>
+                `;
+            });
+        } else {
+            document.getElementById('articleTitle').textContent = 'المقال غير موجود';
+            document.getElementById('articleContent').innerHTML = `
+                <p>عذرًا، لم يتم العثور على المقال المطلوب.</p>
+                <a href="index.html" class="btn btn-primary" style="margin-top:20px;"><i class="fas fa-arrow-right"></i> العودة للمدونة</a>
+            `;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="تواصل مع بثينة عرابي - مؤلفة قصص أطفال وكاتبة محتوى محترفة. تواصل معي لمشاريع التأليف والكتابة">
+    <meta name="keywords" content="بثينة عرابي, تواصل, مؤلفة, كاتبة محتوى">
+    <title>تواصل معي | بثينة عرابي</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+</head>
+
+<body>
+
+    <!-- ===== TOP BANNER ===== -->
+    <div class="top-banner" id="topBanner">
+        <div class="container top-banner-content">
+            <p><i class="fas fa-gift"></i> احصل على <strong>استشارة مجانية</strong> في كتابة المحتوى وتأليف القصص — <a
+                    href="contact.html">تواصل معي الآن</a></p>
+            <button class="top-banner-close" id="closeBanner" aria-label="إغلاق"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container navbar-content">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo/logo.png" alt="بثينة عرابي" class="logo-img">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">من أنا</a></li>
+                <li><a href="services.html">خدماتي</a></li>
+                <li><a href="portfolio/index.html">أعمالي</a></li>
+                <li><a href="blog/index.html">المدونة</a></li>
+                <li><a href="contact.html" class="active">تواصل معي</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-primary btn-nav">تواصل معي</a>
+                <button class="hamburger" id="hamburger" aria-label="فتح القائمة">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <div class="page-hero-text" data-aos="fade-up">
+                    <span class="section-badge"><i class="fas fa-paper-plane"></i> تواصل معي</span>
+                    <h1 class="page-hero-title">هل لديك مشروع في ذهنك؟</h1>
+                    <p class="page-hero-description">
+                        سواء كنت تبحث عن مؤلفة لقصص الأطفال، كاتبة محتوى احترافية، أو مستشارة في الكتابة — أنا هنا
+                        لمساعدتك. تواصل معي وسأرد في أقرب وقت.
+                    </p>
+                    <div class="page-hero-contact">
+                        <a href="mailto:buthainaorabi123@gmail.com" class="contact-chip" dir="ltr">
+                            <i class="fas fa-envelope"></i>
+                            buthainaorabi123@gmail.com
+                        </a>
+                        <a href="tel:+201029416176" class="contact-chip" dir="ltr">
+                            <i class="fas fa-phone"></i>
+                            +20 10 29416176
+                        </a>
+                    </div>
+                </div>
+                <div class="page-hero-image" data-aos="fade-left" data-aos-delay="300">
+                    <img src="assets/images/about/about-hero.png" alt="تواصل معي">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-layout">
+
+                <!-- ===== FORM ===== -->
+                <div class="contact-form-wrapper" data-aos="fade-up">
+                    <div class="contact-form-header">
+                        <h2>أرسل رسالتك</h2>
+                        <p>أملأ النموذج وسأتواصل معك خلال 24 ساعة</p>
+                    </div>
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">الاسم الكامل <span class="required">*</span></label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" id="contactName" name="name" placeholder="اسمك الكامل" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">البريد الإلكتروني <span class="required">*</span></label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" id="contactEmail" name="email" placeholder="example@email.com"
+                                        dir="ltr" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactService">نوع الخدمة</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-concierge-bell"></i>
+                                <select id="contactService" name="service">
+                                    <option value="" disabled selected>اختر الخدمة المطلوبة...</option>
+                                    <option value="children-stories">تأليف قصص أطفال</option>
+                                    <option value="novels">كتابة روايات</option>
+                                    <option value="articles">كتابة مقالات</option>
+                                    <option value="scenarios">سيناريوهات تعليمية</option>
+                                    <option value="other">أخرى</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">موضوع الرسالة <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-tag"></i>
+                                <input type="text" id="contactSubject" name="subject" placeholder="موضوع رسالتك"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">الرسالة <span class="required">*</span></label>
+                            <div class="input-wrapper textarea-wrapper">
+                                <i class="fas fa-comment-alt"></i>
+                                <textarea id="contactMessage" name="message" rows="6"
+                                    placeholder="اكتب رسالتك هنا... كلما كانت أوضح كان أفضل!" required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg contact-submit" id="submitBtn">
+                            <i class="fas fa-paper-plane"></i>
+                            إرسال الرسالة
+                        </button>
+                        <!-- Success Message -->
+                        <div class="form-success" id="formSuccess">
+                            <i class="fas fa-check-circle"></i>
+                            <strong>تم إرسال رسالتك بنجاح!</strong>
+                            <span>سأتواصل معك في أقرب وقت.</span>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- ===== CONTACT INFO ===== -->
+                <div class="contact-info-wrapper" data-aos="fade-up" data-aos-delay="150">
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>البريد الإلكتروني</h4>
+                            <a href="mailto:buthainaorabi123@gmail.com" dir="ltr">buthainaorabi123@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon icon-green">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>رقم الهاتف / واتساب</h4>
+                            <a href="tel:+201029416176" dir="ltr">+20 10 29416176</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon icon-purple">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>الموقع</h4>
+                            <span>بني سويف، مصر</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon icon-orange">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4>وقت الرد</h4>
+                            <span>خلال 24 ساعة في أيام العمل</span>
+                        </div>
+                    </div>
+
+                    <!-- Social -->
+                    <div class="contact-social">
+                        <h4>تابعني على</h4>
+                        <div class="contact-social-links">
+                            <a href="https://www.linkedin.com/in/buthaina-orabi-15515a1b0" target="_blank"
+                                class="social-btn social-linkedin" aria-label="لينكدإن">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span>لينكدإن</span>
+                            </a>
+                            <a href="https://blog.khamsat.com/author/buthaina-orabi/" target="_blank"
+                                class="social-btn social-khamsat" aria-label="خمسات">
+                                <i class="fas fa-pen-nib"></i>
+                                <span>خمسات</span>
+                            </a>
+                            <a href="mailto:buthainaorabi123@gmail.com" class="social-btn social-email"
+                                aria-label="إيميل">
+                                <i class="fas fa-envelope"></i>
+                                <span>إيميل</span>
+                            </a>
+                            <a href="https://wa.me/201029416176" target="_blank" class="social-btn social-whatsapp"
+                                aria-label="واتساب">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>واتساب</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">أسئلة شائعة</span>
+                <h2 class="section-title">أسئلة يسألها الجميع</h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>كم يستغرق تسليم العمل؟</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>يعتمد الوقت على حجم المشروع. القصة القصيرة تستغرق 3-5 أيام، والمقالة 2-3 أيام، والرواية يتفق
+                            عليها حسب الحجم والتفاصيل.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>هل تقدمين تعديلات مجانية؟</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>نعم! أقدم تعديلات مجانية حتى تحصل على النتيجة المثالية التي ترضيك تماماً.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>ما هي طرق الدفع المتاحة؟</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>يتم الاتفاق على طريقة الدفع بشكل مباشر. أقبل التحويل البنكي وفودافون كاش.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>هل تعملين مع دور النشر مباشرة؟</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>نعم، لدي خبرة واسعة في التعامل مع دور النشر العربية وأستطيع مساعدتك في إيصال عملك للناشرين
+                            المناسبين.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo footer-logo">
+                        <img src="assets/images/logo/logo.jpeg" alt="بثينة عرابي" class="logo-img">
+                    </a>
+                    <p>بثينة معوض عرابي — مؤلفة قصص للأطفال واليافعين وكاتبة محتوى محترفة.</p>
+                    <div class="footer-socials">
+                        <a href="https://www.linkedin.com/in/buthaina-orabi-15515a1b0" target="_blank"
+                            aria-label="لينكدإن"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://blog.khamsat.com/author/buthaina-orabi/" target="_blank" aria-label="خمسات"><i
+                                class="fas fa-pen"></i></a>
+                        <a href="mailto:buthainaorabi123@gmail.com" aria-label="إيميل"><i
+                                class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="about.html">من أنا</a></li>
+                        <li><a href="services.html">خدماتي</a></li>
+                        <li><a href="portfolio/">أعمالي</a></li>
+                        <li><a href="blog/">المدونة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>معلومات الاتصال</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> buthainaorabi123@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +20 10 29416176</li>
+                        <li><i class="fas fa-map-marker-alt"></i> بني سويف، مصر</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 بثينة عرابي. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" aria-label="العودة للأعلى">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/contact.js"></script>
+</body>
+
+</html>
